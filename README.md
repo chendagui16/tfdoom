@@ -2,10 +2,13 @@
 ## Dependencies
 [Docker](https://www.docker.com)
 [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
+You can install those using [install_docker.sh](https://github.com/chendagui16/ConfigFile/blob/master/install_docker.sh)
+
 ## Quick start
 ```bash
 ./build.sh
 ```
+
 ## Run
 ```bash
 # auto mount $HOME/TensorOne to /src
