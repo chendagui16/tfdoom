@@ -32,5 +32,6 @@ fi
 $DOCKER_CMD run --net=host -ti --rm \
 	-p 8888:8888 -p 6006:6006 \
 	-v /home/dagui/TensorOne:/src \
+	-v /tmp/.X11-unix:/tmp/.X11-unix \
     --env="DISPLAY" --privileged \
     ${image_tag} sh -c "cd /src && /run_jupyter.sh"
