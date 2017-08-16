@@ -62,6 +62,9 @@ RUN pip --no-cache-dir install opencv-python termcolor tqdm subprocess32 msgpack
 RUN pip --no-cache-dir install \
     http://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
 
+# install python-tk for matplot
+RUN apt-get update && apt-get install -y python-tk
+
 # Enables X11 sharing and creates user home directory
 ENV USER_NAME cig2017
 ENV HOME_DIR /home/$USER_NAME
